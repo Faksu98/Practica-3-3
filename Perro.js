@@ -8,8 +8,17 @@ class Perro {
     #altura
     #edad
 
+    /**
+     * Inicia los datos del perro
+     * @param {String} N Nombre nuevo
+     * @param {Number} P Peso nuevo
+     * @param {String} S Sexo nuevo
+     * @param {String} R Raza nuevo
+     * @param {Boolean} C Caracter nuevo
+     * @param {Number} A Altura nuevo
+     * @param {Number} E Edad nuevo
+     */
     constructor(N, P, S, R, C, A, E){
-
         this.#nombre = N;
         this.#peso = P;
         this.#sexo = S;
@@ -17,7 +26,6 @@ class Perro {
         this.#caracter = C;
         this.#altura = A;
         this.#edad = E;
-
     }
 
 

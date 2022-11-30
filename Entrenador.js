@@ -11,6 +11,19 @@ class Entrenador{
     #sexo
     #precio
 
+    /**
+     * Datos del entrenador
+     * @param {String} N Nombre nuevo
+     * @param {String} A Apellido nuevo
+     * @param {number} E Edad nueva
+     * @param {number} F Fecha de nacimiento nueva
+     * @param {String} L Localidad nueva
+     * @param {number} D DNI nuevo
+     * @param {String} B Banco nuevo
+     * @param {number} T Telefono nuevo
+     * @param {String} S Sexo
+     * @param {number} P Precio nuevo
+     */
     constructor(N, A , E, F, L, D, B, T, S, P){
         this.#nombre = N;
         this.#apellido = this.verificarSiEsMayorDeEdad(A);
@@ -24,7 +37,11 @@ class Entrenador{
         this.#precio = P;
     }
     
-
+    /**
+     * verifica la edad del entrenador
+     * @param {Number} A edad 
+     * @returns devuelve la edad
+     */
     verificarSiEsMayorDeEdad(A){
         let aniosDevolver = -1;
         if ( (A >= 0) && (A <= 50)){
